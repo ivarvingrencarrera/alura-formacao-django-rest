@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+
+    redis:
+        container_name: redis
+        image: redis:alpine
+        ports:
+            - "${CACHE_PORT}:6379"
